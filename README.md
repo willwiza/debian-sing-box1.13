@@ -67,13 +67,19 @@ sudo nano /etc/sing-box/config.json
 tun模式配置
 1.创建服务文件：
 更改sing-box.service配置内容（开机自动开启ip转发）
+
 nano /lib/systemd/system/sing-box.service
+
 2.粘贴以下内容 sing-box.service
 
 3.启用并启动服务：(最后一步，请先配置好节点文件)
+
 sudo systemctl daemon-reload      # 重新加载 systemd 配置
+
 sudo systemctl enable sing-box    # 设置开机自启
+
 sudo systemctl start sing-box     # 立即启动服务
+
 运行前可以测试文件语法：
 sing-box check -c /etc/sing-box/config.json
 
@@ -85,16 +91,23 @@ tun模式-相应的配置文件
 sudo nano /etc/sing-box/tun/nftables.sh
 
 #根据自己模式复制配置文件到运行目录
+
 cp -f /etc/sing-box/tun/nftables.sh /etc/sing-box
+
 cp -f /etc/sing-box/tun/config.json /etc/sing-box
 或者
+
 cp -f /etc/sing-box/tun/* /etc/sing-box
 
 /usr/local/bin/sing-box -D /var/lib/sing-box -C /etc/sing-box check     #测试配置文件合法性
 
 tproxy模式-相应的配置文件
 sudo nano /etc/sing-box/tproxy/nftables.sh
+
 cp -f /etc/sing-box/tproxy/nftables.sh /etc/sing-box
+
 cp -f /etc/sing-box/tproxy/config.json /etc/sing-box
+
 或者
+
 cp -f /etc/sing-box/tproxy/* /etc/sing-box
