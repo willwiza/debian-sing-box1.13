@@ -4,7 +4,7 @@
 > 🪿 **蔡鹅出品，必出炖锅**  
 > 个人使用记录，过分详细，不喜勿喷。
 
-本仓库记录 Debian 系统上 **sing-box v1.13** 的手动安装、systemd 管理和 TUN/TProxy 配置全过程。[memory:3][web:13]
+本仓库记录 Debian 系统上 **sing-box v1.13** 的手动安装、systemd 管理和 TUN/TProxy 配置全过程。
 
 ## 🚀 快速开始
 
@@ -85,7 +85,7 @@ journalctl -u sing-box -e  # 📄 日志
 | **TUN** | `sudo nano /etc/sing-box/tun/nftables.sh`<br>`cp -f /etc/sing-box/tun/* /etc/sing-box/`<br>`sing-box -D /var/lib/sing-box -C /etc/sing-box check` |
 | **TProxy** | `sudo nano /etc/sing-box/tproxy/nftables.sh`<br>`cp -f /etc/sing-box/tproxy/* /etc/sing-box/` |
 
-> ⚠️ **启用 IP 转发**：`sysctl -w net.ipv4.ip_forward=1`（持久化 `/etc/sysctl.conf`）。[memory:2]
+> ⚠️ **启用 IP 转发**：`sysctl -w net.ipv4.ip_forward=1`（持久化 `/etc/sysctl.conf`）。
 
 ## 🎯 四、一键安装脚本
 
@@ -93,7 +93,7 @@ journalctl -u sing-box -e  # 📄 日志
 bash <(curl -fsSL https://sing-box.app/deb-install.sh)
 ```
 
-自动安装最新版 + systemd 支持。[web:12]
+自动安装最新版 + systemd 支持。
 
 ## 📋 五、常用命令速查
 
