@@ -134,6 +134,6 @@ journalctl -u sing-box -e -f
 [![微博/博客](https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-willwiza.dpdns.org-brightgreen?style=flat-square&logo=weibo)](http://willwiza.dpdns.org)
 [![GitHub](https://img.shields.io/badge/GitHub-willwiza-181717?style=flat-square&logo=github)](https://github.com/willwiza)
 
-**Made with ❤️ by 蔡小白🪿** [conversation_history:7][memory:4]
+**Made with ❤️ by 蔡小白🪿**
 
 ```
